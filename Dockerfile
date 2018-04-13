@@ -17,5 +17,5 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 RUN rpm -ivh http://yum.spacewalkproject.org/2.7/RHEL/7/x86_64/spacewalk-repo-2.7-2.el7.noarch.rpm \
   && yum makecache fast \
-  && yum install spacewalk-remote-utils \
+  && yum install -y spacewalk-remote-utils \
   && yum clean all
