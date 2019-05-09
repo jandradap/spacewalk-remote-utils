@@ -2,5 +2,17 @@
 
 Centos with spacewalk-remote-utils for sync channels in spacewalk
 
-
 **More info:** [spacewalkproject](https://spacewalkproject.github.io/)
+
+Path with package data by version:
+
+```bash
+/usr/share/rhn/channel-data
+```
+
+**Update repo:**
+<https://copr.fedorainfracloud.org/coprs/fulltext/?fulltext=spacewalk>
+
+**Changelog:**
+
+- Added RedHat 7.6
