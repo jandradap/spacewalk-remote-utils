@@ -15,7 +15,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       maintainer="Jorge Andrada Prieto <jandradap@gmail.com>" \
       org.label-schema.docker.cmd="docker run -it jorgeandrada/spacewalk-remote-utils bash"
 
-RUN rpm -ivh http://yum.spacewalkproject.org/2.7/RHEL/7/x86_64/spacewalk-repo-2.7-2.el7.noarch.rpm \
+RUN rpm -ivh https://copr-be.cloud.fedoraproject.org/results/%40spacewalkproject/spacewalk-2.9/epel-7-x86_64/00830557-spacewalk-repo/spacewalk-repo-2.9-4.el7.noarch.rpm \
   && yum makecache fast \
   && yum install -y spacewalk-remote-utils \
   && yum clean all
